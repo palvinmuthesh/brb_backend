@@ -7,7 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: ['http://localhost:3000', 'https://brb-website.onrender.com'],
+    origin: ['http://localhost:3000', 'https://brb-website.onrender.com', 'https://brb-backend.onrender.com'],
     credentials: true, // if you're using cookies/auth headers
   });
 
